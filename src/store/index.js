@@ -1,9 +1,9 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import getters from './getters'
-import users from './modules/users/users'
+import Vue from 'vue';
+import Vuex from 'vuex';
+import getters from './getters';
+import users from './modules/users/users';
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   modules: {
@@ -16,4 +16,4 @@ export default new Vuex.Store({
   },
   mutations: {
   }
-})
+});

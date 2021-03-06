@@ -5,12 +5,12 @@ export const login = (data) => {
     url: '/apc-puplic/login',
     method: 'post',
     data
-  })
-}
+  });
+};
 
 export const getUserInfo = () => {
-  return request({
+  return axios({
     url: '/userinfo',
     method: 'get'
-  })
-}
+  });
+};

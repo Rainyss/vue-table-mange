@@ -1,29 +1,29 @@
-import { login } from '@/api/login/login'
-import { getToken, setToken } from '@/utils/auth'
+import { login } from '@/api/login/login';
+import { getToken, setToken } from '@/utils/auth';
 const users = {
-    namespaced: true,
-    state: {
-        token: getToken()
-    },
-    actions: {
-        Login ({ commit }, userInfo) {
-            return new Promise((resolve, reject) => {
-              login(userInfo).then(res => {
-                if (res.code === 200) {
-                  setToken(res.data)
-                  commit('SET_TOKEN', res.data)
-                }
-                resolve()
-              }).catch(err => {
-                reject(err)
-              })
-            })
+  namespaced: true,
+  state: {
+    token: getToken()
+  },
+  actions: {
+    Login ({ commit }, userInfo) {
+      return new Promise((resolve, reject) => {
+        login(userInfo).then(res => {
+          if (res.code === 200) {
+            setToken(res.data);
+            commit('SET_TOKEN', res.data);
           }
-    },
-    mutations: {
-        SET_TOKEN: (state, token) => {
-            state.token = token
-          }
+          resolve();
+        }).catch(err => {
+          reject(err);
+        });
+      });
     }
-}
-export default users
+  },
+  mutations: {
+    SET_TOKEN: (state, token) => {
+      state.token = token;
+    }
+  }
+};
+export default users;
