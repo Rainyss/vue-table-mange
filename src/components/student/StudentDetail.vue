@@ -14,7 +14,7 @@ export default {
         {
           date: '2016-05-02',
           name: '王小虎',
-          address: '上海市普陀区金沙江路11号',
+          address: '上海市普陀区金沙江路1号',
         },
         {
           date: '2016-05-04',
