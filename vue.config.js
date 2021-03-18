@@ -42,7 +42,7 @@ module.exports = {
                 `
       }
     }
-  },
+  }
   // 配置
   /** 
   chainWebpack: (config) => {

@@ -7,7 +7,6 @@
 <script>
 import StudentInfo from '@/components/student/StudentInfo';
 export default {
-  name: 'Home',
   components: {
     StudentInfo
   }
