@@ -1,14 +1,12 @@
 <template>
   <div class="home">
-    <StudentInfo />
+    <img src="" alt="" class="icon-edit">
+   <el-button icon="icon-edit">编辑</el-button>
   </div>
 </template>
 
 <script>
-import StudentInfo from '@/components/student/StudentInfo';
 export default {
-  components: {
-    StudentInfo
-  }
+
 };
 </script>

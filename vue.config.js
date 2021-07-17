@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //Gzip
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
-
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const compress = new CompressionWebpackPlugin({
@@ -33,16 +32,14 @@ module.exports = {
     }
   },
   css: {
-    loaderOptions: {
-      sass: {
-        data: `
-                @import "@/assets/css/variable.scss"; 
-                @import "@/assets/css/common.scss";
-                @import "@/assets/css/mixin.scss";
-                `
-      }
-    }
-  }
+		// extract: isProduction,
+		sourceMap: false,
+		loaderOptions: {
+			sass: {
+				prependData: `@import "@/assets/css/variable.scss";`
+			}
+		}
+	},
   // 配置
   /** 
   chainWebpack: (config) => {

@@ -1,4 +1,4 @@
-import request from '@/utils/request'
+import request from '@/request/http'
 import qs from 'qs'
 
 export function initData(url, params) {

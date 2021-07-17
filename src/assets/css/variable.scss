@@ -1,0 +1,14 @@
+$theme-white: #fff;
+$theme-black: #1c1c1c;
+$sprite-icon: url(../images/cat-1294968_1280.png);
+
+@mixin text-emphasis {
+  
+}
+@mixin scrollBar {
+  
+}
+@mixin spriteIcon {
+  background-image: $sprite-icon;
+  background-repeat: no-repeat;
+}

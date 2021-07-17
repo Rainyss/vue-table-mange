@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import crud from './crud';
+import { crud } from './crud';
 export default {
   mixins: [crud]
 };
